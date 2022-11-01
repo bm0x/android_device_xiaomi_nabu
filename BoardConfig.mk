@@ -113,7 +113,7 @@ TARGET_USES_INTERACTION_BOOST := true
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_BOARD_PLATFORM := msmnile
+#TARGET_BOARD_PLATFORM := msmnile
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop

@@ -130,6 +130,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# Platform
+TARGET_BOARD_PLATFORM := msmnile
+
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2
@@ -162,7 +165,3 @@ PRODUCT_PACKAGES_DEBUG += \
 # Vendor boot
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
-
-# Vendor boot modules
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(NABU_PREBUILT)/modules/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules)
